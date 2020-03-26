@@ -1,0 +1,58 @@
+body{
+    background-image: url("../images/4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    color: #222222;
+}.card{
+    min-width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20%;
+    padding: 1%;
+    text-align: center;
+    align-content: center;
+}.count{
+    font-size: 10em;
+    font-weight: bold;
+    color: #222222;
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+}.counter{
+    border-radius: 3px;
+    height: 50px;
+    min-width: 200px;
+    text-align: center;
+    font-weight: bold;
+    background: none;
+    border: 3px solid #222222;
+    color: #222222;
+    font-size: 1.5em;
+    transition: all 1s ease;
+}.counter:hover, .set:hover, .reset:hover{
+    color: #444444;
+}.footer{
+    font-size:1.5em;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    font-weight: bold;
+    padding: 5%;  
+    align-items: stretch;  
+}.reset{
+    width: 50%;
+    height: 50px;
+    order: 1;
+    padding: 3%;
+    transition: all 1s ease;
+}.set{
+    width: 50%;
+    height: 50px;
+    order: 2;
+    padding: 3%;
+    transition: all 1s ease;
+}
