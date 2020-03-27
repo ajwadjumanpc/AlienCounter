@@ -2,7 +2,7 @@
 A simple and cute tally counter based on web browser. 
 
 # Screenshot
-![Alt text](/image/screenshot.png?raw=true)
+![Alt text](/images/screenshot.png?raw=true)
 
 ## Installation in ubuntu
 Download and extract the zip file. Move to the folder and open terminal 
