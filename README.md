@@ -1,4 +1,4 @@
-# AlienCounter
+# Clickount
 A simple and cute tally counter based on web browser. 
 
 # Screenshot
@@ -17,4 +17,4 @@ Move to the folder and open terminal ```sudo sh ./uninstall.sh```
  - To Set a target - ```SHIFT KEY```
 
 Regards
-> Alien Juror
+> ARMED JUROR

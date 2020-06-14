@@ -1,25 +1,43 @@
+@font-face {
+    font-family: montesserat;
+    src:url('Montserrat-Regular.ttf');
+}
+@font-face {
+    font-family: patua;
+    src:url('PatuaOne-Regular.ttf');
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none;
+}
 body{
-    background-image: url("../images/4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Courier New', Courier, monospace;
-    color: #222222;
+    background: #010024;
+    color: #f4f4f4;
+    font-family: montesserat, serif;    
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }.card{
-    width: 400px;
-    height: 300px;
+    width: 30%;
+    min-width: 400px;
+    height: max-content;
     margin: auto;
     position: absolute;
     top: 0;left: 0;right: 0;bottom: 0;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgb(4,0,255);
+    background: linear-gradient(90deg, rgba(4,0,255,1) 0%, rgba(255,0,155,1) 100%);        
     border-radius: 20%;
-    padding: 1%;
+    padding: 2%;
     text-align: center;
     align-content: center;
+    box-shadow: 5px 5px 20px 5px #f4f4f4;
 }.count{
     font-size: 10em;
     font-weight: bold;
-    color: #222222;
-    font-family: 'Courier New', Courier, monospace;
+    color: #f4f4f4;
+    font-family: montesserat, monospace;
     width: 100%;
 }.counter{
     border-radius: 3px;
@@ -28,12 +46,12 @@ body{
     text-align: center;
     font-weight: bold;
     background: none;
-    border: 3px solid #222222;
-    color: #222222;
+    border: 3px solid #f4f4f4;
+    color: #f4f4f4;
     font-size: 1.5em;
     transition: all 1s ease;
 }.counter:hover, .set:hover, .reset:hover{
-    color: #444444;
+    color: #010024;
 }.footer{
     font-size:1.5em;
     display: flex;
@@ -55,4 +73,66 @@ body{
     order: 2;
     padding: 3%;
     transition: all 1s ease;
+}
+
+
+/*Header*/
+.header{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #010024;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: patua, cursive;
+    padding-bottom: 20px;
+}
+
+.header h1 {
+    position: relative;
+    color: rgba(0, 132, 255, 0.3);
+    font-size: 5rem;
+}
+.header h1:before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    max-width: 7em;
+    white-space: nowrap;
+    color: #fff;
+    animation: loading 8s linear infinite;
+}
+@keyframes loading {
+    0% {
+        max-width: 0;
+    }
+}
+.footer p{
+    position: absolute;
+    bottom: 30px;
+    font-size: 1em;
+    margin: 0 auto;
+    color: rgba(0, 132, 255, 0.3);
+    font-weight: 100;
+
+}
+.footer p a{
+    color: rgba(0, 132, 255, 0.3);
+    font-weight: 100;
+}
+.creator{
+    background: -webkit-linear-gradient(rgba(4,0,255,1), rgba(255,0,155,1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+a:hover{
+    text-decoration: underline;
+}
+@media (max-width: 600px ){
+    .card{
+        width: 80%;
+        min-width: 300px;
+    }.header h1{
+        font-size: 3.5em;
+    }
 }
