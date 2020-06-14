@@ -134,5 +134,7 @@ a:hover{
         min-width: 300px;
     }.header h1{
         font-size: 3.5em;
+    }.footer p{
+        font-size:0.7em;
     }
 }
