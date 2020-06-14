@@ -4,6 +4,8 @@ A simple and cute tally counter based on web browser.
 # Screenshot
 ![Alt text](/images/screenshot.png?raw=true)
 
+## Web View
+https://ajwadjumanpc.github.io/Clickount
 ## Installation in ubuntu
 Download and extract the zip file. Move to the folder and open terminal 
 ```sudo sh ./install.sh```
