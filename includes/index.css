@@ -110,7 +110,7 @@ body{
 .footer p{
     position: absolute;
     bottom: 30px;
-    font-size: 0.6em;
+    font-size: 1em;
     margin: 0 auto;
     color: rgba(0, 132, 255, 0.3);
     font-weight: 100;
@@ -134,5 +134,7 @@ a:hover{
         min-width: 300px;
     }.header h1{
         font-size: 3.5em;
+    }.footer p{
+        font-size:0.6em;
     }
 }
